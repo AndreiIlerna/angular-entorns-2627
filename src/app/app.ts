@@ -3,10 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { Producte}  from './interfaces/producte';
 import { Producte as ProducteClass} from './producte';
 import { music } from './models/music';
+import { Tarjeta } from './components/tarjeta/tarjeta';
+import { Perfil } from './components/perfil/perfil';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Tarjeta, Perfil],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -122,8 +124,8 @@ musica: music[] = [this.canco1, this.canco2, this.canco3, this.canco4, this.canc
 
 
 
-constructor() {
- console.log(this.canco1.getActius());
-}
+//constructor() {
+ //console.log(this.canco1.getActius());
+//}
 
 }

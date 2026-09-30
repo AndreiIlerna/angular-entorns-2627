@@ -1,7 +1,17 @@
 <!--Aquest fitxer conté la vista: estructura HTML i binding {{}}-->
 
+<!--<div class="tarjeta">
+    <h2> {{nom}}</h2>
+    <p> Preu : {{preu}}</p>
+    <p> Estoc: {{estoc}} unitats</p>
+    <p> Preu amb iva (21%): {{preu * 1.21}}</p>
+    <p> {{estoc > 0 ? 'Disponible' : 'Escotat'}}</p>
+    <p> Nom en majuscules: {{nom.toUpperCase()}}</p>
+</div>-->
+
 <div class="tarjeta">
-    <h2> Ordinador gamer pro</h2>
-    <p> Preu : 1299€</p>
-    <p> Disponible</p>
+    <h2> {{producte.nom}} </h2>
+    <p class="categoria"> {{producte.descripcio}} </p>
+    <p class="preu"> {{producte.preu}}</p>
+    <p> Disponibilitat: {{estatDsiponibilitat}}</p>
 </div>

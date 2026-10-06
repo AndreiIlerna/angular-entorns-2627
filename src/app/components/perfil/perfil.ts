@@ -8,12 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Perfil {
 
-nom: String = 'Andrei';
-cognom: String = 'Istoc';
-edat: number = 19;
-cicle: String = 'DAW';
+nom: string = 'Andrei';
+cognom: string = 'Istoc';
+edat: number = 67;
+cicle: string = 'DAW';
 
 
 }
+
 
 

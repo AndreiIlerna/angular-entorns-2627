@@ -1,5 +1,9 @@
 <div class="perfil">
-    <p>Andrei Istoc</p>
-    <p>19 anys</p>
-    <p>Shalom soc en Andrei i estic fent aquest activitat!</p>
+    <h2> {{nom}} </h2>
+    <p>{{cognom}}</p>
+    <p>Edat: {{edat}}</p>
+    <p>Cicle: {{cicle}}</p>
+    <p>{{ edat >= 18 ? "És major d'edat" : "És menor d'edat" }}</p>
+    <p>Any de naixement: {{2026 - edat}}</p>
+    <p>{{(nom + ' ' + cognom).toUpperCase()}}</p>
 </div>

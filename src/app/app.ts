@@ -122,6 +122,17 @@ canco5: music = {
 
 musica: music[] = [this.canco1, this.canco2, this.canco3, this.canco4, this.canco5];
 
+get actius(): music[] {
+  return this.musica.filter(canco => canco.album);
+}
+
+findById(id: number): music | undefined {
+  return this.musica.find(canco => canco.id === id);
+}
+
+formatarElement(element: music): string {
+  return `${element.nom} - ${element.artista} (${element.bpm ?? 'BPM desconegut'})`;
+}
 
 
 //constructor() {
